@@ -124,5 +124,7 @@ For any queries or support, feel free to reach out:
 
 ---
 
-Made with ❤️ by Ganesh Kanna.
+Made with ❤️ by DIVAKAR S.
+
+👍
 
