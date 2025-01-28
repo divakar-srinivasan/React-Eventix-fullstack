@@ -73,6 +73,21 @@ Eventix is a MERN stack-based web application designed for college students to s
    The application will be accessible at `http://localhost:3000`.
 
 ## Screenshots
+
+![Screenshot 2025-01-28 142447](https://github.com/user-attachments/assets/bac5daed-a36e-4113-8110-9811f951e367)
+
+![Screenshot 2025-01-28 142458](https://github.com/user-attachments/assets/306fcf8d-464f-4e94-acea-1ac2a5e491dd)
+
+![Screenshot 2025-01-28 142516](https://github.com/user-attachments/assets/21be47e5-5600-4a31-84e1-e2c4018edf09)
+
+![Screenshot 2025-01-28 142525](https://github.com/user-attachments/assets/5ece3889-7787-4ef2-82f0-042aa2226294)
+
+![Screenshot 2025-01-28 142620](https://github.com/user-attachments/assets/e02e21dd-6643-4970-b76a-6086a42fb748)
+
+![Screenshot 2025-01-28 142639](https://github.com/user-attachments/assets/1c429593-9683-4e89-99ab-df1bea282f48)
+
+![Screenshot 2025-01-28 142659](https://github.com/user-attachments/assets/aacea0f4-60d3-4317-8a6d-102fcc9194cb)
+
 ![Screenshot 2025-01-28 142712](https://github.com/user-attachments/assets/1cecb715-039f-4446-a323-68015c179ac7)
 
 ## Animations
