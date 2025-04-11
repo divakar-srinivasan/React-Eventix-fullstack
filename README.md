@@ -1,57 +1,71 @@
-Eventix - College Event Registration System
-Eventix is a full-stack web application built to help college students stay updated with ongoing events and workshops and register for them seamlessly. Originally built using the MERN stack, the application has also been implemented using Spring Boot and MySQL, showcasing flexibility in both NoSQL and relational database backends.
+# 🎉 Eventix - College Event Registration System
 
-With a responsive design built using Tailwind CSS and smooth animations via GSAP, Eventix ensures a modern, engaging, and user-friendly experience. While designed specifically for Kongu Engineering College, it can easily be adapted to suit any educational institution.
+**Eventix** is a full-stack web application designed to help college students stay updated with ongoing events and workshops, and register for them seamlessly.
 
-🔥 Features
-User Authentication
+Originally developed using the **MERN stack**, Eventix has also been implemented using **Spring Boot + MySQL**, showcasing flexibility in handling both **NoSQL** and **relational** database systems.
 
-Secure login with email and password.
+With a responsive design built using **Tailwind CSS** and smooth **GSAP** animations, Eventix provides a modern, engaging, and user-friendly experience. While tailored for **Kongu Engineering College**, it is easily customizable for any educational institution.
 
-JWT-based authentication and password encryption.
+---
 
-Event Management
+## 🔥 Features
 
-Browse current and upcoming events with detailed info: name, poster, venue, date, and time.
+### 🔐 User Authentication
+- Secure login using email and password.
+- JWT-based authentication and password encryption (bcrypt/Spring Security).
 
-Event Registration
+### 📅 Event Management
+- View current and upcoming events.
+- Event details include:
+  - Name  
+  - Poster  
+  - Venue  
+  - Date and Time  
 
-One-click registration for events.
+### 📝 Event Registration
+- One-click registration for any event.
+- Integrated **WhatsApp** link for direct communication with coordinators.
 
-WhatsApp integration for direct communication with event coordinators.
+### 🏷️ Department-Specific Filtering
+- Events categorized by departments:
+  - IT
+  - CSE
+  - Mechanical
+  - Chemical
+  - Food Tech
+  - EEE
+  - ECE
+  - ...and more
 
-Department-Specific Filtering
+### 🎨 Interactive UI
+- Clean, responsive design using **Tailwind CSS**.
+- Smooth animations powered by **GSAP** for an enhanced user experience.
 
-View events by department: IT, CSE, Mechanical, Chemical, Food Tech, EEE, ECE, and more.
+---
 
-Interactive UI
+## ⚙️ Technologies Used
 
-Built using Tailwind CSS for clean design and responsiveness.
+### 🧩 MERN Stack Version
+- **Frontend**: React.js, Tailwind CSS, GSAP  
+- **Backend**: Node.js, Express.js  
+- **Database**: MongoDB  
+- **Authentication**: JWT
 
-GSAP-powered animations enhance the overall user experience.
+### 🧱 Spring Boot + MySQL Version
+- **Frontend**: React.js (same UI as MERN version)  
+- **Backend**: Spring Boot (Java)  
+- **Database**: MySQL  
+- **Authentication**: Spring Security with JWT
 
-⚙️ Technologies Used
-MERN Stack Version:
-Frontend: React.js, Tailwind CSS, GSAP
+---
 
-Backend: Node.js, Express.js
+✅ **Both versions provide the same core functionality.**  
+Choose the stack based on your project needs and preferred technology.
 
-Database: MongoDB
-
-Authentication: JWT
-
-Spring Boot Version:
-Backend: Spring Boot (Java)
-
-Database: MySQL
-
-Frontend: React.js (same UI as the MERN version)
-
-Authentication: Spring Security with JWT
-
-✅ Both versions provide the same core functionality—choose the stack based on your project requirements.
 
 ## Installation Guide
+
+### 🔹 MERN Stack Version
 
 1. **Clone the Repository**
    ```bash
@@ -72,7 +86,7 @@ Authentication: Spring Security with JWT
      ```
 
 3. **Set Up Environment Variables**
-   Create a `.env` file in the `server` directory with the following:
+   Create a `.env` file in the `backend` directory with the following:
    ```env
    PORT=4200
    MONGO_URI=your_mongodb_connection_string
@@ -93,72 +107,60 @@ Authentication: Spring Security with JWT
 
    The application will be accessible at `http://localhost:3000`.
 
-🛠 Installation Guide (Spring Boot + MySQL Version)
-⚠️ This version uses Spring Boot for the backend, MySQL as the database, and React for the frontend. Ensure you have Java 17+, Maven, and MySQL installed.
+---
 
-1. Clone the Repository
-bash
-Copy
-Edit
-git clone https://github.com/divakar-srinivasan/Eventix-SpringBoot-MySQL.git
-cd Eventix-SpringBoot-MySQL
-2. Setup MySQL Database
-Open MySQL and create a database named eventix_db (or any name of your choice):
+### 🔹 Spring Boot + MySQL Version
 
-sql
-Copy
-Edit
-CREATE DATABASE eventix_db;
-3. Configure Spring Boot Backend
-Navigate to the backend folder:
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/divakar-srinivasan/Eventix-SpringBoot-MySQL.git
+   cd Eventix-SpringBoot-MySQL
+   ```
 
-bash
-Copy
-Edit
-cd backend
-Open application.properties and update the database credentials:
+2. **Set Up MySQL Database**
+   - Open MySQL and create a database:
+     ```sql
+     CREATE DATABASE eventix_db;
+     ```
 
-properties
-Copy
-Edit
-spring.datasource.url=jdbc:mysql://localhost:3306/eventix_db
-spring.datasource.username=your_mysql_username
-spring.datasource.password=your_mysql_password
+3. **Configure Backend (Spring Boot)**
+   - Go to the backend directory:
+     ```bash
+     cd backend
+     ```
 
-spring.jpa.hibernate.ddl-auto=update
-spring.jpa.show-sql=true
-jwt.secret=your_jwt_secret
-Install dependencies and run the server:
+   - Open the `src/main/resources/application.properties` file and update:
+     ```properties
+     spring.datasource.url=jdbc:mysql://localhost:3306/eventix_db
+     spring.datasource.username=your_mysql_username
+     spring.datasource.password=your_mysql_password
 
-bash
-Copy
-Edit
-./mvnw spring-boot:run
-The backend will start at http://localhost:8080
+     spring.jpa.hibernate.ddl-auto=update
+     spring.jpa.show-sql=true
+     jwt.secret=your_jwt_secret
+     ```
 
-4. Setup React Frontend
-From the project root:
+4. **Run the Backend Server**
+   - From the backend directory:
+     ```bash
+     ./mvnw spring-boot:run
+     ```
 
-bash
-Copy
-Edit
-cd frontend
-npm install
-npm start
-The frontend will be accessible at http://localhost:3000
+   The backend server will start at `http://localhost:8080`.
 
-✅ Spring Boot Features Implemented
-REST APIs for user login and registration
+5. **Run the Frontend**
+   - From the root directory:
+     ```bash
+     cd frontend
+     npm install
+     npm start
+     ```
 
-JWT-based authentication and authorization
+   The application will be accessible at `http://localhost:3000`.
 
-CRUD APIs for event creation and registration
+---
 
-DTOs and Service layers for clean architecture
-
-Role-based access control (if extended)
-
-
+You can now copy and paste this into your `README.md` file under the `## Installation Guide` section. Let me know if you'd like me to help format the whole file or push a new `README.md` version.
 
 ## Screenshots
 
