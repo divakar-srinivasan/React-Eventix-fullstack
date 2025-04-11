@@ -1,34 +1,55 @@
-# Eventix - College Event Registration System
+Eventix - College Event Registration System
+Eventix is a full-stack web application built to help college students stay updated with ongoing events and workshops and register for them seamlessly. Originally built using the MERN stack, the application has also been implemented using Spring Boot and MySQL, showcasing flexibility in both NoSQL and relational database backends.
 
-Eventix is a MERN stack-based web application designed for college students to stay updated on ongoing events and workshops, allowing them to register seamlessly. Built with Tailwind CSS for responsive design and GSAP for animations, Eventix offers an engaging and user-friendly experience. The platform is tailored for Kongu Engineering College but can be adapted for other institutions as well.
+With a responsive design built using Tailwind CSS and smooth animations via GSAP, Eventix ensures a modern, engaging, and user-friendly experience. While designed specifically for Kongu Engineering College, it can easily be adapted to suit any educational institution.
 
-## Features
+🔥 Features
+User Authentication
 
-1. **User Authentication**
-   - Login functionality using email and password.
-   - Secure data storage with encryption.
+Secure login with email and password.
 
-2. **Event Management**
-   - Users can view ongoing and upcoming events.
-   - Details such as event name, poster, venue, date, and time are displayed.
+JWT-based authentication and password encryption.
 
-3. **Event Registration**
-   - Users can register for events directly through the platform.
-   - Integrated WhatsApp link for easy communication with event organizers.
+Event Management
 
-4. **Interactive Design**
-   - Modern, responsive UI using Tailwind CSS.
-   - Smooth animations powered by GSAP.
+Browse current and upcoming events with detailed info: name, poster, venue, date, and time.
 
-5. **Department-Specific Filtering**
-   - Events are categorized by departments such as IT, CSE, Mechanical, Chemical, Food Tech, EEE, ECE, etc.
+Event Registration
 
-## Technologies Used
+One-click registration for events.
 
-- **Frontend**: React.js, Tailwind CSS, GSAP
-- **Backend**: Node.js, Express.js
-- **Database**: MongoDB
-- **Authentication**: JWT (JSON Web Tokens)
+WhatsApp integration for direct communication with event coordinators.
+
+Department-Specific Filtering
+
+View events by department: IT, CSE, Mechanical, Chemical, Food Tech, EEE, ECE, and more.
+
+Interactive UI
+
+Built using Tailwind CSS for clean design and responsiveness.
+
+GSAP-powered animations enhance the overall user experience.
+
+⚙️ Technologies Used
+MERN Stack Version:
+Frontend: React.js, Tailwind CSS, GSAP
+
+Backend: Node.js, Express.js
+
+Database: MongoDB
+
+Authentication: JWT
+
+Spring Boot Version:
+Backend: Spring Boot (Java)
+
+Database: MySQL
+
+Frontend: React.js (same UI as the MERN version)
+
+Authentication: Spring Security with JWT
+
+✅ Both versions provide the same core functionality—choose the stack based on your project requirements.
 
 ## Installation Guide
 
@@ -71,6 +92,73 @@ Eventix is a MERN stack-based web application designed for college students to s
      ```
 
    The application will be accessible at `http://localhost:3000`.
+
+🛠 Installation Guide (Spring Boot + MySQL Version)
+⚠️ This version uses Spring Boot for the backend, MySQL as the database, and React for the frontend. Ensure you have Java 17+, Maven, and MySQL installed.
+
+1. Clone the Repository
+bash
+Copy
+Edit
+git clone https://github.com/divakar-srinivasan/Eventix-SpringBoot-MySQL.git
+cd Eventix-SpringBoot-MySQL
+2. Setup MySQL Database
+Open MySQL and create a database named eventix_db (or any name of your choice):
+
+sql
+Copy
+Edit
+CREATE DATABASE eventix_db;
+3. Configure Spring Boot Backend
+Navigate to the backend folder:
+
+bash
+Copy
+Edit
+cd backend
+Open application.properties and update the database credentials:
+
+properties
+Copy
+Edit
+spring.datasource.url=jdbc:mysql://localhost:3306/eventix_db
+spring.datasource.username=your_mysql_username
+spring.datasource.password=your_mysql_password
+
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+jwt.secret=your_jwt_secret
+Install dependencies and run the server:
+
+bash
+Copy
+Edit
+./mvnw spring-boot:run
+The backend will start at http://localhost:8080
+
+4. Setup React Frontend
+From the project root:
+
+bash
+Copy
+Edit
+cd frontend
+npm install
+npm start
+The frontend will be accessible at http://localhost:3000
+
+✅ Spring Boot Features Implemented
+REST APIs for user login and registration
+
+JWT-based authentication and authorization
+
+CRUD APIs for event creation and registration
+
+DTOs and Service layers for clean architecture
+
+Role-based access control (if extended)
+
+
 
 ## Screenshots
 
