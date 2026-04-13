@@ -74,7 +74,7 @@ User → Event Registration → WhatsApp Redirect
 
 ---
 
-##4. 🔥 Features
+## 4. 🔥 Features
 
 ### 🔐 User Authentication
 - Secure login using email and password.
