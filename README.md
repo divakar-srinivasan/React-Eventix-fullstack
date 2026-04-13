@@ -390,9 +390,10 @@ Eventix leverages GSAP for:
 
 ## 16. Contact
 
-Email: [sdivakar2005@gmail.com](mailto:sdivakar2005@gmail.com)
-LinkedIn: [https://www.linkedin.com/in/divakar-srinivasan/](https://www.linkedin.com/in/divakar-srinivasan/)
-GitHub: [https://github.com/divakar-srinivasan](https://github.com/divakar-srinivasan)
+For any queries or support, feel free to reach out:
+- **Email**: sdivakar2005@gmail.com
+- **LinkedIn**: https://www.linkedin.com/in/divakar-srinivasan/
+- **GitHub**: [divakar-srinivasan](https://github.com/divakar-srinivasan)
 
 ---
 
