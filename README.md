@@ -398,5 +398,3 @@ For any queries or support, feel free to reach out:
 ---
 
 Made with ❤️ by DIVAKAR S.
-
-```
